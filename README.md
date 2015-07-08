@@ -1,7 +1,7 @@
 # HTTP Status Cats for Nginx
 
-Currently implemented: HTTP 4xx
-To Do: HTTP 3xx and 5xx
+Currently implemented: HTTP 4xx and 5xx
+To Do: HTTP 3xx
 
 ## Setup
 
@@ -34,8 +34,15 @@ error_page 431 /error/431.html;
 error_page 444 /error/444.html;
 error_page 450 /error/450.html;
 error_page 451 /error/451.html;
+error_page 500 /error/500.html;
+error_page 502 /error/502.html;
+error_page 503 /error/503.html;
+error_page 506 /error/506.html;
+error_page 507 /error/507.html;
+error_page 508 /error/508.html;
+error_page 509 /error/509.html;
+error_page 599 /error/599.html;
 
-#error_page 500 501 502 503 504 /error/5xx.html;
 
 location ^~ /error/ {
 ›   root /srv/http/status;
