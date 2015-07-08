@@ -1,7 +1,6 @@
 # HTTP Status Cats for Nginx
 
-Currently implemented: HTTP 4xx and 5xx
-To Do: HTTP 3xx
+Currently implemented: HTTP 3xx, 4xx and 5xx
 
 ## Setup
 
@@ -10,6 +9,13 @@ Insert the following snippet into the server block that is going to use the new 
 
 ```nginx
 # Custom error pages
+error_page 300 /error/300.html;
+error_page 301 /error/301.html;
+error_page 302 /error/302.html;
+error_page 303 /error/303.html;
+error_page 304 /error/304.html;
+error_page 305 /error/305.html;
+error_page 307 /error/307.html;
 error_page 400 /error/400.html;
 error_page 401 /error/401.html;
 error_page 403 /error/403.html;
