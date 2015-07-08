@@ -12,7 +12,6 @@ Insert the following snippet into the server block that is going to use the new 
 # Custom error pages
 error_page 400 /error/400.html;
 error_page 401 /error/401.html;
-error_page 401 /error/401.html;
 error_page 403 /error/403.html;
 error_page 404 /error/404.html;
 error_page 405 /error/405.html;
