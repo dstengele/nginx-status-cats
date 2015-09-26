@@ -50,7 +50,7 @@ error_page 599 /error/599.html;
 
 
 location ^~ /error/ {
-›   root /srv/http/status;
+›   root /srv/http/nginx-status-cats;
 }
 ```
 
